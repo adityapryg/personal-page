@@ -23,46 +23,46 @@ const projects: CollectionEntry<"projects">[] = (
 <Layout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
     <aside data-pagefind-ignore>
-      <h1 class="animate font-semibold text-black dark:text-white">
-        Introducing Astro Micro 🔬
-      </h1>
-      <div class="space-y-16">
+      <div class="flex items-center space-x-4">
+        <img src="/profile.png" alt="Profile Picture" class="w-16 h-16 rounded-full" />
+        <div>
+          <h1 class="animate font-semibold text-black dark:text-white">
+            Mas, Adit, Yoga
+          </h1>
+          <h2 class="animate font-light text-black dark:text-white">
+            Software Developer, System Analyst
+          </h2>
+        </div>
+      </div>
+      <div class="space-y-16 mt-4">
         <section>
           <article class="space-y-4">
             <span class="animate">
               <p>
-                Astro Micro is an accessible theme for <Link
-                  href="https://astro.build/">Astro</Link
-                >. It's a fork of
-                <Link href="https://github.com/markhorn-dev">
-                  Mark Horn's
-                </Link> popular theme <Link
-                  href="https://astro.build/themes/details/astronano/"
-                  >Astro Nano</Link
-                >. Like Nano, Micro comes with zero frameworks installed.
-              </p>
-              <p>
-                Micro adds features like <Link href="https://pagefind.app/"
-                  >Pagefind</Link
-                > for search, <Link href="https://giscus.app">Giscus</Link> for comments,
-                and more. For a full list of changes, see this <Link
-                  href="/blog/00-micro-changelog">blog post</Link
-                >.
+                Hey, I'm a software developer from Indonesia, currently working as a Developer & System Analyst at
+                <Link href="https://brainmatics.id" external={true}> Brainmatics </Link> & <Link href="https://braindevs.id" external={true}>Braindevs</Link>.
+                I help build software for both companies and ministries, primarily focusing on frontend development with ReactJS and backend development with Laravel.
               </p>
             </span>
+             <!-- Photo Gallery Section -->
+            <section class="animate space-y-6 mt-8">
+              <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+                <img src="/aditya/photo2.jpg" alt="Photo 2" class="w-full h-auto rounded-lg object-cover" />
+                <img src="/aditya/photo3.jpg" alt="Photo 3" class="w-full h-auto rounded-lg object-cover" />
+                <img src="/aditya/photo4.jpg" alt="Photo 4" class="w-full h-auto rounded-lg object-cover" />
+                <img src="/aditya/photo5.jpg" alt="Photo 5" class="w-full h-auto rounded-lg object-cover" />
+              </div>
+            </section>
             <span class="animate">
               <p>
-                Micro still comes with everything great about Nano — full type
-                safety, a sitemap, an RSS feed, and Markdown + MDX support.
-                Styled with TailwindCSS and preconfigured with system, light,
-                and dark themes.
+                I also work as a trainer for various IT courses, teaching Laravel, Java, React, Software Testing, and more. 
+                Having received numerous gifts of knowledge in tech and science, I am dedicated to giving back through text and talk.
               </p>
               <p>
-                Visit
-                <Link href="https://github.com/trevortylerlee/astro-micro">
-                  Astro Micro on GitHub
+                📄
+                <Link href="/aditya-cv-jun-2024.pdf">
+                  Resume
                 </Link>
-                to fork the repository to get started.
               </p>
             </span>
           </article>
