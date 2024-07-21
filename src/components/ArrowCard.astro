@@ -9,7 +9,7 @@ const { entry } = Astro.props as {
   entry: CollectionEntry<"blog"> | CollectionEntry<"projects">;
 };
 
-const typeColorClass = entry.data.type === 'public' ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800';
+const typeColorClass = 'type' in entry.data && entry.data.type === 'public' ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800';
 ---
 
 <a
@@ -24,13 +24,13 @@ const typeColorClass = entry.data.type === 'public' ? 'bg-green-200 text-green-8
       {entry.data.description}
     </div>
     <div class="flex flex-wrap mt-2 space-x-2">
-      {entry.data.type && (
+      {'type' in entry.data && (
         <span class={`inline-block ${typeColorClass} text-xs px-2 py-1 rounded-full`}>
           {entry.data.type}
         </span>
       )}
-      {entry.data.tags && Array.isArray(entry.data.tags) && entry.data.tags.map(tag => (
-        <span key={tag} class="inline-block bg-blue-200 text-blue-800 text-xs px-2 py-1 rounded-full">
+      {'tags' in entry.data && entry.data.tags && Array.isArray(entry.data.tags) && entry.data.tags.map((tag: string) => (
+        <span class="inline-block bg-blue-200 text-blue-800 text-xs px-2 py-1 rounded-full">
           {tag}
         </span>
       ))}
