@@ -19,10 +19,7 @@ Hey, I'm a software developer from Indonesia, currently working as a Developer &
 ${renderComponent($$result3, "Link", $$Link, { "href": "https://brainmatics.id", "external": true }, { "default": ($$result4) => renderTemplate` Brainmatics ` })} & ${renderComponent($$result3, "Link", $$Link, { "href": "https://braindevs.id", "external": true }, { "default": ($$result4) => renderTemplate`Braindevs` })}.
                 I help build software for both companies and ministries, primarily focusing on frontend development with ReactJS and backend development with Laravel.
 </p> </span> <!-- Photo Gallery Section --> <section class="animate space-y-6 mt-8"> <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4"> <img src="/aditya/photo2.jpg" alt="Photo 2" class="w-full h-auto rounded-lg object-cover"> <img src="/aditya/photo3.jpg" alt="Photo 3" class="w-full h-auto rounded-lg object-cover"> <img src="/aditya/photo4.jpg" alt="Photo 4" class="w-full h-auto rounded-lg object-cover"> <img src="/aditya/photo5.jpg" alt="Photo 5" class="w-full h-auto rounded-lg object-cover"> </div> </section> <span class="animate"> <p>
-I also work as a trainer for various IT courses, teaching Laravel, Java, React, Software Testing, and more. 
-                Having received numerous gifts of knowledge in tech and science, I am dedicated to giving back through text and talk.
-</p> <p>
-📄
+I also work as a trainer for various IT courses, teaching Laravel, Java, React, Software Testing, and more. 📄
 ${renderComponent($$result3, "Link", $$Link, { "href": "/aditya-cv-jun-2024.pdf" }, { "default": ($$result4) => renderTemplate`
 Resume
 ` })} </p> </span> </article> </section> <section class="animate space-y-6"> <div class="flex flex-wrap items-center justify-between gap-y-2"> <h2 class="font-semibold text-black dark:text-white">

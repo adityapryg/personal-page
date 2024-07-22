@@ -8,6 +8,8 @@ import BackToPrevious from "@components/BackToPrevious.astro";
 import Link from "@components/Link.astro";
 import TableOfContents from "@components/TableOfContents.astro";
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const projects = (await getCollection("projects"))
     .filter((post) => !post.data.draft)
